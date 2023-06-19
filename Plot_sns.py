@@ -1,6 +1,7 @@
 from sympy import *
-import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 
 def triangular_numbers(n):
@@ -22,7 +23,8 @@ def Mobius_Matrix(a):
 
 def plot_Mobius_values(n):
     M = Mobius_Matrix(n)
-    plt.matshow(M)
+    sns.heatmap(M.corr())
+    sns.heatmap(M.corr(), cmap='coolwarm', annot=True)
     plt.legend()
     plt.show()
 
