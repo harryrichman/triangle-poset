@@ -29,8 +29,6 @@ def plot_Mobius_values(n):
     sns.heatmap(M.corr())
     plt.legend()
     plt.show()
-    sns.heatmap(M.corr(), cmap='coolwarm', annot=True)
-    plt.legend()
-    plt.show()
+
 
 plot_Mobius_values(int(input("Number: ")))
