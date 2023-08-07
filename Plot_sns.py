@@ -25,7 +25,7 @@ def Mobius_Matrix(a):
 def plot_Mobius_values(n):
     M = Mobius_Matrix(n)
     M = pd.DataFrame(M)
-    M.columns = triangular_numbers(n)
+    #M.columns = triangular_numbers(n)
     sns.heatmap(M.corr())
     plt.legend()
     plt.show()
