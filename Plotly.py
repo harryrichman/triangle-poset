@@ -25,6 +25,7 @@ def Mobius_Matrix(a):
 
 def plot_Mobius_values(n):
     M = Mobius_Matrix(n)
+    M = M.transpose()
     fig = px.imshow(M, color_continuous_scale='RdBu', color_continuous_midpoint=0.0)
     fig.show()
 

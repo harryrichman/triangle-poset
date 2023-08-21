@@ -24,6 +24,7 @@ def Mobius_Matrix(a):
 
 def plot_Mobius_values(n):
     M = Mobius_Matrix(n)
+    M = M.transpose()
     M = pd.DataFrame(M)
     #M.columns = triangular_numbers(n)
     sns.heatmap(M.corr())
