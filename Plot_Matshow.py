@@ -24,6 +24,9 @@ def plot_Mobius_values(n):
     M = Mobius_Matrix(n)
     M = M.transpose()
     plt.matshow(M)
+    plt.tick_params(axis='both', which='major',
+               labelsize=10, labelbottom=False,
+               bottom=True, top=False, labeltop=True)
     plt.legend()
     plt.show()
 
