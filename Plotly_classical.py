@@ -20,7 +20,7 @@ def Mobius_Matrix(a):
 
 def plot_Mobius_values(n):
     M = Mobius_Matrix(n)
-    M = M.transpose()
+    #M = M.transpose()
     fig = px.imshow(M, color_continuous_scale='RdBu', color_continuous_midpoint=0.0, zmin=-2, zmax=2)
     fig.update_layout(
     xaxis={'side': 'top'}  
