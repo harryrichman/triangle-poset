@@ -30,7 +30,7 @@ def plot_Mobius_values(n):
     sns.heatmap(M.corr())
     plt.tick_params(axis='both', which='major',
                labelsize=10, labelbottom=False,
-               bottom=True, top=False, labeltop=True)
+               bottom=False, top=True, labeltop=True)
     plt.legend()
     plt.show()
 
