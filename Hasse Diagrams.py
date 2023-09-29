@@ -15,7 +15,7 @@ for i in range(1, 21):
             G.add_edge(i, j)
 
 # Draw the Hasse diagram
-pos = nx.nx_agraph.graphviz_layout(G)
+pos = nx.nx_agraph.graphviz_layout(G, prog="dot")
 nx.draw(G, pos, with_labels=True, node_size=2000, node_color='skyblue', font_size=10, arrows=False)
 plt.axis('off')
 plt.show()
