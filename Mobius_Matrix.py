@@ -1,12 +1,13 @@
 from sympy import *
 import matplotlib.pyplot as plt
+import numpy as np
 
 def total():
     number = int(input("Number: "))
     return number
 
 def triangular_numbers():
-    triangular_numbers = ([(x * (x + 1) // 2) for x in range(1, total()+1)])
+    triangular_numbers = [(x * (x + 1) // 2) for x in range(1, total()+1)]
     return triangular_numbers
 
 def Mobius_Matrix(lst):

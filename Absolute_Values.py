@@ -12,6 +12,5 @@ def abs_value(lst):
 
 
 S = abs_value(N[0])
-print(S)
 plt.plot(S)
 plt.show()
