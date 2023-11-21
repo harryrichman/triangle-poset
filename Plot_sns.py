@@ -3,27 +3,12 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
-# random comment
+from Mobius_Matrix import Mobius_Matrix
+from Mobius_Matrix import triangular_numbers
 
-def triangular_numbers(n):
-    # returns a list of triangular numbers
-    return [(x * (x + 1) // 2) for x in range(1,n+1)]
 
-def Zeta_Matrix(n):
-    # returns zeta matrix for partial order on first n triangular numbers
-    lst = triangular_numbers(n)
-    zeta_array = [[0 if a % b != 0 else 1 for a in lst] for b in lst]
-    Z = np.array(zeta_array)
-    Z.transpose()
-    return Z
-
-def Mobius_Matrix(a):
-    Z = Zeta_Matrix(a)
-    M = np.linalg.inv(Z)
-    return M
-
-def plot_Mobius_values(n):
-    M = Mobius_Matrix(n)
+def plot_sns():
+    M = Mobius_Matrix(triangular_numbers())
     M = M.transpose()
     M = pd.DataFrame(M)
     #M.columns = triangular_numbers(n)
@@ -35,4 +20,4 @@ def plot_Mobius_values(n):
     plt.show()
 
 
-plot_Mobius_values(int(input("Number: ")))
+plot_sns()

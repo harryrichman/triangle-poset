@@ -1,11 +1,10 @@
 from sympy import *
 import matplotlib.pyplot as plt
-import numpy as np
 from Mobius_Matrix import Mobius_Matrix
 from Mobius_Matrix import triangular_numbers
 
 
-def plot_Mobius_values():
+def plot_matshow():
     M = Mobius_Matrix(triangular_numbers())
     M = M.transpose()
     plt.matshow(M)
@@ -15,4 +14,4 @@ def plot_Mobius_values():
     plt.legend()
     plt.show()
 
-plot_Mobius_values()
+plot_matshow()

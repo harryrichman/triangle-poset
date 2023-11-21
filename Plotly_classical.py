@@ -1,25 +1,12 @@
 import plotly.express as px
 from sympy import *
 import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-import pandas as pd
+from Mobius_Matrix import Mobius_Matrix
+from Mobius_Matrix import triangular_numbers
 
-def Zeta_Matrix(n):
-    # returns zeta matrix for partial order on first n numbers
-    lst = range(1, 1 + n)
-    zeta_array = [[0 if a % b != 0 else 1 for a in lst] for b in lst]
-    Z = np.array(zeta_array)
-    Z.transpose()
-    return Z
 
-def Mobius_Matrix(a):
-    Z = Zeta_Matrix(a)
-    M = np.linalg.inv(Z)
-    return M
-
-def plot_Mobius_values(n):
-    M = Mobius_Matrix(n)
+def plotly_classical():
+    M = Mobius_Matrix(triangular_numbers())
     #M = M.transpose()
     fig = px.imshow(M, color_continuous_scale='RdBu', color_continuous_midpoint=0.0, zmin=-2, zmax=2)
     fig.update_layout(
@@ -28,4 +15,4 @@ def plot_Mobius_values(n):
     fig.show()
 
 
-plot_Mobius_values(int(input("Number: ")))
+plotly_classical()
