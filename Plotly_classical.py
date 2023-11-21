@@ -1,8 +1,7 @@
 import plotly.express as px
 from sympy import *
 import numpy as np
-from Mobius_Matrix import Mobius_Matrix
-from Mobius_Matrix import triangular_numbers
+from Mobius_Matrix import Mobius_Matrix, triangular_numbers
 
 
 def plotly_classical():

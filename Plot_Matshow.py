@@ -1,7 +1,7 @@
 from sympy import *
 import matplotlib.pyplot as plt
-from Mobius_Matrix import Mobius_Matrix
-from Mobius_Matrix import triangular_numbers
+from Mobius_Matrix import Mobius_Matrix, triangular_numbers
+
 
 
 def plot_matshow():

@@ -3,8 +3,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
-from Mobius_Matrix import Mobius_Matrix
-from Mobius_Matrix import triangular_numbers
+from Mobius_Matrix import Mobius_Matrix, triangular_numbers
 
 
 def plot_sns():
