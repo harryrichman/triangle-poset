@@ -16,6 +16,7 @@ def Mobius_Matrix(lst):
     Z.transpose()
     return np.linalg.inv(Z)
 
+
 M = Mobius_Matrix(triangular_numbers())
 N = M[0, :].tolist()
 

@@ -1,8 +1,7 @@
 from sympy import *
 import matplotlib.pyplot as plt
 import numpy as np
-from Mobius_Matrix import Mobius_Matrix
-from Mobius_Matrix import triangular_numbers
+from Mobius_Matrix import Mobius_Matrix, triangular_numbers
 from Absolute_Values import abs_value
 from Sum_mobius_values import sum_function
 
