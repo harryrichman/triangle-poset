@@ -1,8 +1,8 @@
 from sympy import *
 import matplotlib.pyplot as plt
-from Mobius_Matrix import triangular_numbers, Mobius_Matrix
+from mobius_matrix import triangular_numbers, mobius_matrix
 
-M = Mobius_Matrix(triangular_numbers())
+M = mobius_matrix(triangular_numbers())
 N = M[0, :].tolist()
 
 def abs_value(lst):

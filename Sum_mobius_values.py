@@ -1,9 +1,9 @@
 from sympy import *
 import matplotlib.pyplot as plt
-from Mobius_Matrix import Mobius_Matrix, triangular_numbers
+from mobius_matrix import mobius_matrix, triangular_numbers
 
 
-M = Mobius_Matrix(triangular_numbers())
+M = mobius_matrix(triangular_numbers())
 N = M[0, :].tolist()
 
 def sum_function(lst):
