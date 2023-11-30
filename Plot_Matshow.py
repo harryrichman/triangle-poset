@@ -1,11 +1,11 @@
 from sympy import *
 import matplotlib.pyplot as plt
-from Mobius_Matrix import Mobius_Matrix, triangular_numbers
+from mobius_matrix import mobius_matrix, triangular_numbers
 
 
 
 def plot_matshow():
-    M = Mobius_Matrix(triangular_numbers())
+    M = mobius_matrix(triangular_numbers())
     M = M.transpose()
     plt.matshow(M)
     plt.tick_params(axis='both', which='major',
