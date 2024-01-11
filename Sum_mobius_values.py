@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 from mobius_matrix import mobius_matrix, triangular_numbers
 
 
-M = mobius_matrix(triangular_numbers())
+number = int(input("Number: "))
+
+M = mobius_matrix(triangular_numbers(number))
 N = M[0, :].tolist()
 
 def sum_function(lst):

@@ -7,7 +7,9 @@ from Sum_mobius_values import sum_function
 
 
 
-M = mobius_matrix(triangular_numbers())
+number = int(input("Number: "))
+
+M = mobius_matrix(triangular_numbers(number))
 N = M[0, :].tolist()
 
 S = sum_function(abs_value(N[0]))
