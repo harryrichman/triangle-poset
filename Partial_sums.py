@@ -16,7 +16,6 @@ n_divided = [N[i]/(i+1) for i in range(len(N))]
 
 S = partial_sums(n_divided)
 
-print(S[-1])
 print(min(S))
 
 
