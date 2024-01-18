@@ -17,6 +17,5 @@ if __name__ == "__main__":
     number = int(input("Number: "))
     M = mobius_matrix(triangular_numbers(number))
     N = M[0, :].tolist()
-
-    plt.plot(N[0])
+    plt.plot(N)
     plt.show()
