@@ -10,11 +10,17 @@ def plot_sns():
     M = mobius_matrix(triangular_numbers())
     M = M.transpose()
     M = pd.DataFrame(M)
-    #M.columns = triangular_numbers(n)
+    # M.columns = triangular_numbers(n)
     sns.heatmap(M.corr())
-    plt.tick_params(axis='both', which='major',
-               labelsize=10, labelbottom=False,
-               bottom=False, top=True, labeltop=True)
+    plt.tick_params(
+        axis="both",
+        which="major",
+        labelsize=10,
+        labelbottom=False,
+        bottom=False,
+        top=True,
+        labeltop=True,
+    )
     plt.legend()
     plt.show()
 

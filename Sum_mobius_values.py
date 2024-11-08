@@ -6,9 +6,11 @@ from mobius_matrix import mobius_matrix, triangular_numbers
 M = mobius_matrix(triangular_numbers())
 N = M[0, :].tolist()
 
+
 def sum_function(lst):
-    sum_list = [sum(lst[:i+1]) for i in range(len(lst))]
+    sum_list = [sum(lst[: i + 1]) for i in range(len(lst))]
     return sum_list
+
 
 S = sum_function(N[0])
 plt.plot(S)
