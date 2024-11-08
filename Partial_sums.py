@@ -8,11 +8,13 @@ number = int(input("Number: "))
 M = mobius_matrix(triangular_numbers(number))
 N = M[0, :].tolist()
 
+
 def partial_sums(lst):
-    result = [sum(lst[:i+1]) for i in range(len(lst))]
+    result = [sum(lst[: i + 1]) for i in range(len(lst))]
     return result
 
-n_divided = [N[i]/(i+1) for i in range(len(N))]
+
+n_divided = [N[i] / (i + 1) for i in range(len(N))]
 
 S = partial_sums(n_divided)
 

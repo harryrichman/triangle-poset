@@ -8,6 +8,7 @@ from mobius_matrix import mobius_matrix, triangular_numbers
 
 number = int(input("Number: "))
 
+
 def plot_sns():
     M = mobius_matrix(triangular_numbers(number))
     M = M.transpose()

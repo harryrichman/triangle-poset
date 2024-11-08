@@ -10,6 +10,7 @@ def abs_value(lst):
     abs_list = [abs(l) for l in lst]
     return abs_list
 
+
 lst = N[0]
 S = abs_value(lst)
 plt.plot(S)
