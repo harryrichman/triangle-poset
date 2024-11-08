@@ -8,7 +8,8 @@ def triangular_numbers(n):
     return triangular_numbers
 
 
-def mobius_matrix(lst):
+def mobius_matrix(n):
+    lst = triangular_numbers(n)
     zeta_array = [[0 if n % m != 0 else 1 for n in lst] for m in lst]
     Z = np.array(zeta_array)
     Z.transpose()
@@ -18,7 +19,7 @@ def mobius_matrix(lst):
 if __name__ == "__main__":
 
     number = int(input("Number: "))
-    M = mobius_matrix(triangular_numbers(number))
+    M = mobius_matrix(number)
     N = M[0, :].tolist()
     plt.plot(N)
     plt.show()

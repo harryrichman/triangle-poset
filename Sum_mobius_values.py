@@ -5,7 +5,7 @@ from mobius_matrix import mobius_matrix, triangular_numbers
 
 number = int(input("Number: "))
 
-M = mobius_matrix(triangular_numbers(number))
+M = mobius_matrix(number)
 N = M[0, :].tolist()
 
 

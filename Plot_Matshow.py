@@ -6,7 +6,7 @@ number = int(input("Number: "))
 
 
 def plot_matshow():
-    M = mobius_matrix(triangular_numbers(number))
+    M = mobius_matrix(number)
     M = M.transpose()
     plt.matshow(M)
     plt.tick_params(

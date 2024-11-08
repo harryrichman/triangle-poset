@@ -10,7 +10,7 @@ number = int(input("Number: "))
 
 
 def plot_sns():
-    M = mobius_matrix(triangular_numbers(number))
+    M = mobius_matrix(number)
     M = M.transpose()
     M = pd.DataFrame(M)
     # M.columns = triangular_numbers(n)

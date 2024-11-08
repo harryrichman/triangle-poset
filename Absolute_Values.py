@@ -2,7 +2,9 @@ from sympy import *
 import matplotlib.pyplot as plt
 from mobius_matrix import triangular_numbers, mobius_matrix
 
-M = mobius_matrix(triangular_numbers())
+number = int(input("Number: "))
+
+M = mobius_matrix(number)
 N = M[0, :].tolist()
 
 
