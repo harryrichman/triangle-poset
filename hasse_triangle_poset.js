@@ -4,17 +4,49 @@ function getTriangleHasseGraph(n_val) {
     // add nodes
     var ns = [];
     for (i = 1; i <= n_val; i++) {
-        /////////////////////////
-        // FILL IN CODE HERE
-        ///////////////////////
+        const node = {
+            id: i,
+            label: String(i)
+        };
+        hasse_graph.nodes.push(node);
+        ns.push(i);
     }
     console.log("nodes: " + ns);
     // add edges
     var adj_list = {};
-        /////////////////////////
-        // FILL IN CODE HERE
-        ///////////////////////
-    console.log(adj_list);
+    for (j = 1; j <= n_val; j++) {
+        const n = j;
+        adj_list[n] = [];
+        var grandchildren = [];
+        // iterate through "lower" node
+        for (i = 1; i < j; i++) {
+            const d = n - i;
+            var addEdge = false;
+            n_tri = n * (n + 1) / 2
+            d_tri = d * (d + 1) / 2
+            if (n_tri % d_tri == 0)  {
+                addEdge = true;
+                // add children of d to grandchildren
+                grandchildren = grandchildren.concat(adj_list[d])
+                if (grandchildren.length > 0) {
+                    console.log("current gchildren of " + n + ": " + grandchildren)
+                }
+            }
+            if (grandchildren.includes(d)) {
+                addEdge = false;
+            }
+            if (addEdge) {
+                adj_list[n].push(d);
+                const edge = { 
+                    from: n, 
+                    to: d,
+                    id: String(d) + " \u22D6 " + String(n),
+                };
+                hasse_graph.edges.push(edge)
+            }
+        }
+    }
+    console.log("adj list: " + String(adj_list));
     return hasse_graph;
 }
 
@@ -65,6 +97,7 @@ function getDivHasseGraph(n_val) {
             }
         }
     }
+    console.log("adj list: ");
     console.log(adj_list);
     return hasse_graph;
 }
