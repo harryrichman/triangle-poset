@@ -1,0 +1,46 @@
+\documentclass[varwidth]{standalone}[2011/12/21]
+\usepackage{tikz-cd}
+\usetikzlibrary{graphs}
+\usetikzlibrary{arrows.meta,graphs,graphdrawing}
+\usegdlibrary{layered}
+
+\begin{document}
+
+
+\tikz \graph [
+    layered layout, 
+    sibling distance=12mm, 
+    level sep=8mm, 
+    nodes={circle,draw,outer sep=1mm,inner sep=0mm,minimum size=6mm}, 
+    grow'=up]
+{
+  1 -- {
+    2 -- {
+        3 -- {
+            8,
+            11,
+            12,
+            20,
+            15,
+        },
+        6 -- {14 -- 20,},
+        5 -- {
+            9,
+            14,
+            15,
+        }, 
+        17,
+        18,
+    },
+    4 -- {
+        15, 19, 20, },
+    7,
+    10,
+    13,
+    16,
+  },
+  % {15, 10, 6} -> 120
+  % {21, 15} -> 105
+};
+
+\end{document}

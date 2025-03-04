@@ -1,0 +1,243 @@
+% uses logo file:
+% ncts_logo.jpg
+\documentclass[12pt]{article}
+\usepackage{CJKutf8}
+\usepackage{graphicx,amssymb}
+\usepackage{xcolor}
+
+% select font
+\usepackage{libertinus}
+\usepackage[T1]{fontenc}
+
+\usepackage{microtype} % Improve justification
+
+\newcommand{\floor}[1]{\lfloor {#1} \rfloor}
+\newcommand{\ceil}[1]{\lceil {#1} \rceil}
+
+% no page numbers
+\pagestyle{empty}
+
+\textheight     21.0000cm  %     (Footings will move if you change here)
+\textwidth      15.0000cm  %     (OK to change)
+\topmargin      -0.0000cm  %     (All the letter will move if you change here)
+\oddsidemargin   0.9000cm  %     (OK to change)
+\evensidemargin \oddsidemargin
+
+\begin{document}
+\vspace*{-2.2cm}
+\noindent
+\hspace{-0.5cm}
+\begin{CJK*}{UTF8}{bsmi}
+\begin{minipage}[c]{160mm}
+  \begin{tabular}{ll}
+  \includegraphics[height=30mm]{ncts_logo} 
+  \hspace{1.2in}
+   &
+    \begin{tabular}{r}
+      \\[-0.8in]
+      %{Fred Hutchinson Cancer Center}\\
+      {Room 503, Cosmology Building}\\
+      {National Taiwan University}\\
+      {No. 1, Sec. 4, Roosevelt Rd.}\\
+      {Taipei City 106, Taiwan}\\
+      {(台北市羅斯福路四段1號}\\
+      {台灣大學宇宙學大樓503室)}
+    \end{tabular}
+  \end{tabular}
+\end{minipage}
+\end{CJK*}
+
+\bigskip
+\medskip
+
+\noindent
+%\begin{flushright}
+\today
+%\end{flushright}
+\vspace{0.4cm}
+
+{\noindent 
+Involve, a Journal of Mathematics \\ 
+Mathematical Sciences Publishers} % Name/title of the addressee
+
+
+\vspace{1.2cm}
+
+\noindent
+{Dear Professor Li,}
+
+\bigskip
+\noindent
+I am submitting the paper
+%David Harry Richman, 
+\textit{The M\"{o}bius function of the poset of triangular numbers under divisibility},
+joint work with Rohan Pandey,
+for publication in \textit{Involve}.
+This work was primarily completed while I was a postdoc at the University of Washington, and Rohan was in high school and later was an undergraduate student at UW.
+We attest that at least one-third of the authors of this paper are high-school, undergraduate, or graduate students.
+
+\bigskip
+\noindent
+In this paper, we investigate the partial order consisting of the triangular numbers under the relation of integer divisibility.
+This investigation is entirely experimental at this stage; we collect data and make conjectures on the asymptotic behavior of this M\"{o}bius function.
+The data on the M\"{o}bius function is generated using code written in Python.
+
+\bigskip
+\noindent
+As potential reviewers, we suggest
+Jean-Paul Cardinal,
+Randell Heyman,
+Tadej Kotnik,
+and Nathan Ng.
+% \bigskip
+% \noindent
+
+\bigskip
+\noindent
+Thank you for your time and consideration.
+% \bigskip
+% \noindent
+I look forward to your reply.
+\medskip
+
+\vskip 0.8cm
+
+%\hspace{2.5in}
+\vbox{
+\begin{tabbing}
+Sincerely yours, 
+\\[0.5cm]
+\hspace{0.1in}
+\includegraphics[scale=0.3]{signature1}
+\\[0.5cm]
+
+David Harry Richman \\
+
+
+\end{tabbing}
+}
+
+\vskip 0.6cm
+
+%\thispagestyle{empty}
+
+%\hrule
+
+\noindent
+\begin{tabular}{ll} 
+%Phone: (734) 764-763-1186 & \hspace{.4in}
+Email: 
+\texttt{hrichman@ncts.ntu.tw.edu} & \hspace{.4in}
+\end{tabular}
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+
+
+%%% old version
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{letter} % 10pt font size default, 11pt and 12pt are also possible
+
+\usepackage{geometry} % Required for adjusting page dimensions
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+
+%\longindentation=0pt % Un-commenting this line will push the closing "Sincerely," to the left of the page
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	top=3cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	left=4.5cm, % Left margin
+	right=4.5cm, % Right margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage{CJKutf8}
+
+\usepackage{stix} % Use the Stix font by default
+
+
+
+\title{sample cover letter}
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME & ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\signature{David Harry Richman} % Your name for the signature at the bottom
+
+\address{
+      {Room 503, Cosmology Building}\\
+      {National Taiwan University}\\
+      {No. 1, Sec. 4, Roosevelt Rd.}\\
+      {Taipei City 106, Taiwan}\\
+      {台北市羅斯福路四段1號}\\
+      {(台灣大學宇宙學大樓503室}
+} % Your address and phone number
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\begin{CJK*}{UTF8}{bsmi}
+
+% institute logo
+\begin{minipage}[c]{160mm}
+  \includegraphics[height=30mm]{ncts_logo} 
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{letter}
+{\phantom{space} \\
+Involve, a Journal of Mathematics \\ 
+Mathematical Sciences Publishers} % Name/title of the addressee
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT SECTION
+%----------------------------------------------------------------------------------------
+
+\opening{{Dear Professor Li,}}
+
+I am submitting the paper
+%David Harry Richman, 
+\textit{The M\"{o}bius function of the poset of triangular numbers under divisibility},
+joint work with Rohan Pandey,
+for publication in \textit{Involve}.
+
+In this paper, we investigate the partial order consisting of the triangular numbers under the relation of integer divisibility.
+....
+As potential referees, we suggest Jean-Paul Cardinal, Randell Heyman, and Marius Overholt.
+
+% statement required by Involve submission guidelines
+We attest that at least one-third of the authors of this paper are high-school, undergraduate, or graduate students.
+
+Thank you for your time and consideration.
+
+I look forward to your reply.
+
+\vspace{0.1cm} % Extra whitespace for aesthetics
+\closing{Sincerely yours,}
+\vspace{-0.1cm} % Extra whitespace for aesthetics
+
+\ps{email: hrichman@ncts.ntu.tw.edu} % Postscript text, comment this line to remove it
+
+%\encl{Copyright permission form} % Enclosures with the letter, comment this line to remove it
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+ 
+\end{CJK*}
+\end{document}
